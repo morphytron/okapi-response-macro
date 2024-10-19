@@ -37,7 +37,7 @@ pub struct C {
     email: String,
 }
 
-okapi_rocket_response!(A : (One, 200, "application/json") ->
+okapi_rocket_response!(A : (One, 200, "application/json"),(Accept, 204, "application/json") ->
     B :  (Two, 203, "application/json") -> C : (Three, 404, "application/json") -> (500,501));
 /// Random documentation for OpenApi
 #[openapi(tag = "User Versions")]
