@@ -10,7 +10,7 @@ Also, the last bit of the macro pattern -> (500,501) indicates the responses tha
 It is not required for your business requirements, but it is for this macro.
 You would need to respond an empty tuple -> ().  
 
-**Note: usage requires the "paste" crate to be imported.
+**Note: usage requires the "paste" crate to be imported.**
 
 ```rust
 use rocket::get;
@@ -44,7 +44,7 @@ pub struct C {
 okapi_rocket_response!(A : (Ok, 200, "application/json"), (Accept, 202, "application/json") ->
     B :  (Create, 203, "application/json") -> C : (NotFound, 404, "application/json") -> (500,501));
 
-/// Random documentation for OpenApi
+/// Creates documentation for OpenApi
 #[openapi(tag = "User Versions")]
 #[get("/")]
 pub fn schema_derived() ->  ABCR {
