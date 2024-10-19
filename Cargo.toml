@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["Daniel Alexander Apatiga <dapatiga@gmail.com>"]
 homepage = "https://www.pickupleague.com/"
 readme = "readme.md"
-repository = "https://github.com/morphytron/okapi-response-derive.git"
+repository = "https://github.com/morphytron/okapi-response-macro.git"
 
 
 [lib]
