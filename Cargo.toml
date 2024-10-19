@@ -1,0 +1,26 @@
+[package]
+name = "okapi-response-mac"
+version = "0.1.0"
+edition = "2021"
+authors = ["Daniel Alexander Apatiga <dapatiga@gmail.com>"]
+homepage = "https://www.pickupleague.com/"
+readme = "readme.md"
+repository = "https://github.com/morphytron/okapi-response-derive.git"
+
+
+[lib]
+name="okapi_response_mac"
+path = "src/lib.rs"
+crate-type = ["lib"]
+
+#[features]
+#default=["rocket"]
+#rocket=["dep:rocket_okapi", "dep:rocket"]
+#actix=[]
+
+[dependencies]
+#serde="1.0.210"
+#serde_json="1.0.128"
+#schemars = "0.8.10"
+#okapi = { version = "0.7.0" }
+#actix feature
