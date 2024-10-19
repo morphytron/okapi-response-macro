@@ -6,7 +6,8 @@ authors = ["Daniel Alexander Apatiga <dapatiga@gmail.com>"]
 homepage = "https://www.pickupleague.com/"
 readme = "readme.md"
 repository = "https://github.com/morphytron/okapi-response-macro.git"
-
+description = "A macro for creating response code based on responses structs rather than typing and implementing OkapiRocketResponseInner manually."
+license = "MIT"
 
 [lib]
 name="okapi_response_mac"

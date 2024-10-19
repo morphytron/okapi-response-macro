@@ -1,6 +1,6 @@
 # Okapi Response macro crate
 
-## Create code based on responses structs rather than typing and implementing manually.  Utilizes both macros from the Rocket and Okapi-Rocket crates.
+## A single macro for creating response code based on responses structs rather than typing and implementing OkapiRocketResponseInner manually.
 
 ### Usage
 
