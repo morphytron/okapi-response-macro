@@ -2,7 +2,7 @@
 /// Easily create Responder implemented Enums for your use cases depending on responses using this macro.
 /// Sometimes there might be conflicts when using the same structs, hence, it would be important to nest your API's in a mod.
 macro_rules! okapi_rocket_response {
-    ($name1: tt -> $(($enum_name: tt, $code: literal, $content_type: literal)),+ -> ($( $text_code: literal),*)) => {
+    ($name1: tt : $(($enum_name: tt, $code: literal, $content_type: literal)),+ -> ($( $text_code: literal),*)) => {
 
         paste! {
             #[derive(Responder)]
@@ -37,7 +37,6 @@ macro_rules! okapi_rocket_response {
                 }
             }
         }
-
     };
     ($name1: tt : $(($enum_name: ident, $code : literal, $content_type: literal)),+ ->
     $name2: tt : $(($enum_name2: ident, $code2: literal, $content_type2: literal)),+ -> ($(/*$text_code_name: ident,*/ $text_code: literal),*)) => {

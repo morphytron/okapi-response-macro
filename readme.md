@@ -1,6 +1,8 @@
 # Okapi Response macro crate
 
-## A single macro for creating response code based on responses structs rather than typing and implementing OkapiRocketResponseInner manually.
+## A single macro for creating response code based on responses structs for cases in which it would be ok to avoid implementing OkapiRocketResponseInner manually.
+
+*Make strongly typed Rocket responses while simultaneously adding to your openapi.json definitions.*
 
 ### Usage
 
@@ -48,7 +50,7 @@ okapi_rocket_response!(A : (Ok, 200, "application/json"), (Accept, 202, "applica
 #[openapi(tag = "User Versions")]
 #[get("/")]
 pub fn schema_derived() ->  ABCR {
-    ABC::One(Json::from(A {
+    ABCR::Ok(Json::from(A {
         name: "asdfasdf".to_string(),
         email: "asdgasdg".to_string(),
         other: "hghsfghs".to_string(),
